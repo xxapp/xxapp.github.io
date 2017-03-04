@@ -9,7 +9,7 @@ categories: frontend component
 
 花了近一天的时间，用我认为比较主流的前端框架分别实现了同一个简单的功能，看图就能明白这个功能，这里也只比较简单的单层组件的实现。
 
-![]({{ site.url }}/assests/component-prototype.png)
+![](https://raw.githubusercontent.com/xxapp/xxapp.github.io/master/assests/component-prototype.png)
 
 当然几种框架的实现都使用了组件化的方式，并实例化三次，所以你看到图上有三行且每行的初始文字不同。接下来我将分别展示Angular2、Vue、React和Molecule的组件实现。注：[Molecule]不是流行组件化框架，但是用与众不同的方式实现组件。
 
