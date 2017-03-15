@@ -54,7 +54,7 @@ this.write.apply(this, arguments)
 this._stream.write('\u001b8')
 ```
 
-其中 `this._stream` 为控制台的输出流， `this.write` 为原生打印日志的方法，`linesUp` 为光标距离要修改的这一行的距离。有趣的是，这里通过向控制台输出一些编码来控制行为，这些编码叫做 `ANSI Escape sequences`。正如上面展示的那样，有些编码并不是用来显示字符，而是用来控制行为或者改变颜色等等。
+其中 `this._stream` 为控制台的输出流， `this.write` 为原生打印日志的方法，`linesUp` 为光标距离到要修改的这一行的距离。有趣的是，这里通过向控制台输出一些编码来控制行为，这些编码叫做 `ANSI Escape sequences`。正如上面展示的那样，有些编码并不是用来显示字符，而是用来控制行为或者改变颜色等等。
 
 ### `linesUp` 是怎么计算的
 
