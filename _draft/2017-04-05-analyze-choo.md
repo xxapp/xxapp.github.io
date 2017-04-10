@@ -5,6 +5,8 @@ date:   2017-04-05 13:54:25
 categories: frontend plugin analysis
 ---
 
+PP: 已烂尾，不要学习，多批评。
+
 ## 简介
 
 choo 是一个前端框架，项目地址是 https://github.com/yoshuawuyts/choo
