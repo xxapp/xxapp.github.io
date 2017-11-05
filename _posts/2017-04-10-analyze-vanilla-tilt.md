@@ -43,3 +43,12 @@ CSS3 本身就使带有一些优化，再加上作者是在 requestAnimateFrame 
 
 ### 元素的倾斜角度是根据什么算出来的
 
+下图中 `event` 为 mousemove 事件触发时的事件对象；`rect` 为 `element.getBoundingClientRect()`。
+
+![compute](https://raw.githubusercontent.com/xxapp/xxapp.github.io/master/assests/vanilla-tilt.png)
+
+首先是通过鼠标位置和元素位置计算鼠标在元素内的坐标 `(x, y)`。然后计算当前鼠标位置距元素中心点的向量，`x - width / 2` 和 `height / 2 - y`。最后根据 `x向量 / width * 最大角度` 和 `y向量 / height * 最大角度`，计算出两个方向的倾斜角度，分别对应 rotateY 和 rotateX 的值。
+
+## 结语
+
+vanilla-tilt 是 JS 与 CSS3 结合使用的非常好的例子，值得学习一下。并且提供了 init、destroy 和 reset 等方法和 change 事件，很容易和支持组件的框架结合使用，这样的 API 设计也值得学习。
