@@ -15,6 +15,7 @@ permalink: /blog/:year/:month/:title
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 
 redcarpet:
   extensions: ["tables", "autolink"]
