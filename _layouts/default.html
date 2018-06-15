@@ -22,6 +22,19 @@
             var todayValue = (today - markDay) / (24 * 60 * 60 * 1000) % 2 ^ markValue;
             window.document.getElementById('family').style.color = todayValue ? '#0000ff' : '#ff0000';
         }());
+
+
+        (function() {
+            var timer = setInterval(() => {
+              var now = Date.now();
+              var happyTime = new Date(2018, 5, 15, 21, 2, 0);
+              var diff = happyTime.getTime() - now;
+              if (diff < 0) {
+                clearInterval(timer);
+              }
+              window.document.getElementById('timer').textContent = `${Math.floor(diff / 3600000)}小时${Math.floor(diff % 3600000 / 60000)}分钟${Math.floor(diff % 60000 / 1000)}秒${diff % 1000}`;
+            }, 1);
+        }());
     </script>
   </body>
 
