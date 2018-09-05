@@ -27,10 +27,11 @@
         (function() {
             var timer = setInterval(() => {
               var now = Date.now();
-              var happyTime = new Date(2018, 5, 15, 21, 2, 0);
+              var happyTime = new Date(2018, 8, 8, 0, 50, 0);
               var diff = happyTime.getTime() - now;
               if (diff < 0) {
                 clearInterval(timer);
+                diff = 0;
               }
               window.document.getElementById('timer').textContent = `${Math.floor(diff / 3600000)}小时${Math.floor(diff % 3600000 / 60000)}分钟${Math.floor(diff % 60000 / 1000)}秒${diff % 1000}`;
             }, 1);
