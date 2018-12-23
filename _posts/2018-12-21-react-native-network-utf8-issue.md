@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "记一个 emoji 引起的 RN 网络请求问题"
-date:   2018-05-19 15:05:37
-categories: react react-native analysis
+date:   2018-12-23 22:45:37
+categories: react react-native emoji network utf8
 ---
 
 一天，业务开发同学反馈了一个 RN 的问题，RN 项目在 Android APP 中启动后报如下错误导致崩溃：
